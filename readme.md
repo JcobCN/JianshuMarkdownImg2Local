@@ -19,3 +19,8 @@ python spider_new.py [目标文件夹]
 ## 欢迎与我交流
 - 微信公众号：天地卜仁
 - 知乎：天地卜仁
+
+## 编译后的exe版
+
+![img.png](img.png)
+公众号后台回复：jianshu  获取

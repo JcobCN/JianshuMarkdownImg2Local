@@ -33,15 +33,17 @@ def download_and_replace_image(filepath: str):
             if not img_url.startswith('http://') and not img_url.startswith('https://'):
                 print(f'不是有效的网络图片链接，跳过')
                 return
-            img_name = os.path.basename(img_url.replace(url_suffix, '').replace('?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240', ''))
-            download_pics(img_url, filepath, img_name)
-            print(f'下载图片：{img_name}')
-            if '.' in img_name:
-                img_base_name = img_name[0:img_name.index('.')]
+            img_base_name = os.path.basename(img_url.replace(url_suffix, '').replace('?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240', ''))
+            print(f'下载图片：{img_base_name}')
+            img_name = img_base_name
+            if '.' in img_base_name:
+                # img_base_name = img_name[0:img_name.index('.')]
+                img_name = img_base_name
             else:
                 # 没有图片后缀的话就加上jpg
-                img_base_name = img_name + '.jpg'
-                img_name += '.jpg'
+                img_name = img_base_name + '.png'
+                # img_name += '.png'
+            download_pics(img_url, filepath, img_name)
 
             img_relative_path = os.path.join(os.path.basename(filepath).replace('.md', '.assets'), img_name)
             print(f'替换图片链接：{img_url} with {img_relative_path}')
