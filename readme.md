@@ -8,6 +8,7 @@
 [https://github.com/Deali-Axy/Markdown-Image-Parser](https://github.com/Deali-Axy/Markdown-Image-Parser)
 
 ### 运行
+*重要：运行前请关闭系统代理！！！*
 图片文件命名格式参照typora 文件名.assert（不带.md后缀 ）
 
 例如：文档名为 **你好世界.md** 资源文件夹名为 **你好世界.assert**
@@ -18,9 +19,9 @@ python spider_new.py [目标文件夹]
 
 ## 欢迎与我交流
 - 微信公众号：元宇宙听我说
-- 知乎：元宇宙听我说
+- 知乎：天地卜仁
 
-## 编译后的exe版
+## 编译后的exe直接运行版
 
 ![img.png](img.png)
 公众号后台回复：jianshu  获取
