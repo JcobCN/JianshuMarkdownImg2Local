@@ -24,4 +24,4 @@ python spider_new.py [目标文件夹]
 ## 编译后的exe直接运行版
 
 ![img.png](img.png)
-公众号后台回复：jianshu  获取
+公众号后台回复：jianshu  获取 
